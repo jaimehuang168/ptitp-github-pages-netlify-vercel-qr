@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#06223f">
+    <meta
+      name="description"
+      content="PTITP Digital Business Card for Ching-Yi Jaime Huang, Investment Promotion Manager."
+    >
+    <title>PTITP Digital Business Card | Ching-Yi Jaime Huang</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%2306223f'/%3E%3Cpath d='M14 16h36v8H38v24h-8V24H14z' fill='%2324d18f'/%3E%3C/svg%3E"
+    >
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="hero" aria-labelledby="page-title">
+        <img
+          class="logo-mark"
+          src="assets/logo_ptitp.jpeg"
+          alt="PTITP logo"
+          width="180"
+          height="180"
+        >
+
+        <p class="eyebrow">Smart Technology Park</p>
+        <h1 id="page-title">PTITP Digital Business Card</h1>
+        <p class="subtitle">Parque Tecnológico Inteligente Taiwán Paraguay</p>
+      </section>
+
+      <section class="business-card" aria-labelledby="contact-name">
+        <div class="card-topline"></div>
+
+        <div class="identity">
+          <p class="role-label">Gerente / Investment Promotion Manager</p>
+          <h2 id="contact-name">Ching-Yi Jaime Huang</h2>
+          <p class="chinese-name" lang="zh-Hant">黃進益</p>
+          <p class="position" lang="zh-Hant">Gerente / 招商經理</p>
+        </div>
+
+        <div class="company-block">
+          <p>Paraguay Synthetic Co., Corp.</p>
+          <p>Parque Tecnológico Inteligente Taiwán Paraguay</p>
+          <p>PTITP</p>
+        </div>
+
+        <dl class="contact-list">
+          <div>
+            <dt>Phone</dt>
+            <dd><a href="tel:+595984580003">+595 984 580 003</a></dd>
+          </div>
+          <div>
+            <dt>Email</dt>
+            <dd><a href="mailto:psc.gerente9.py@gmail.com">psc.gerente9.py@gmail.com</a></dd>
+          </div>
+          <div>
+            <dt>Address</dt>
+            <dd>
+              Mcal. José Félix Estigarribia Km. 302 de la Ruta PY02,
+              Minga Guazú, Alto Paraná, Paraguay
+            </dd>
+          </div>
+          <div>
+            <dt>RUC</dt>
+            <dd>80034134-1</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="actions" aria-label="Contact actions">
+        <button class="action-button primary" type="button" id="save-contact">
+          <span aria-hidden="true">+</span>
+          Save Contact
+        </button>
+        <a class="action-button" href="https://wa.me/595984580003" target="_blank" rel="noopener">
+          <span aria-hidden="true">WA</span>
+          WhatsApp
+        </a>
+        <a class="action-button" href="tel:+595984580003">
+          <span aria-hidden="true">☎</span>
+          Call
+        </a>
+        <a class="action-button" href="mailto:psc.gerente9.py@gmail.com">
+          <span aria-hidden="true">@</span>
+          Email
+        </a>
+        <a
+          class="action-button"
+          id="maps-link"
+          href="https://www.google.com/maps/search/?api=1&query=Mcal.%20Jos%C3%A9%20F%C3%A9lix%20Estigarribia%20Km.%20302%20de%20la%20Ruta%20PY02%2C%20Minga%20Guaz%C3%BA%2C%20Alto%20Paran%C3%A1%2C%20Paraguay"
+          target="_blank"
+          rel="noopener"
+        >
+          <span aria-hidden="true">⌖</span>
+          Google Maps
+        </a>
+      </section>
+
+      <section class="qr-panel" aria-labelledby="qr-title">
+        <div>
+          <p class="section-kicker">Scan and share</p>
+          <h2 id="qr-title">Digital Card QR Code</h2>
+          <p class="qr-copy">This QR Code points to the current page URL after deployment.</p>
+        </div>
+
+        <div class="qr-frame">
+          <div id="qr-code" aria-label="QR Code for this digital business card"></div>
+          <p id="qr-status" role="status">Generating QR Code...</p>
+        </div>
+
+        <button class="action-button secondary" type="button" id="download-qr">
+          <span aria-hidden="true">↓</span>
+          Download QR Code
+        </button>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      Parque Tecnológico Inteligente Taiwán Paraguay © 2026
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
