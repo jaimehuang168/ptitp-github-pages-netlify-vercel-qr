@@ -261,7 +261,7 @@ h1 {
 }
 
 .action-button.secondary {
-  width: 100%;
+  width: min(100%, 300px);
   margin-top: 16px;
   background: rgba(36, 209, 143, 0.14);
 }
@@ -270,6 +270,8 @@ h1 {
   display: grid;
   gap: 18px;
   padding: 22px 20px;
+  justify-items: center;
+  text-align: center;
 }
 
 .qr-panel h2 {
@@ -285,6 +287,7 @@ h1 {
 
 .qr-frame {
   display: grid;
+  width: min(100%, 300px);
   justify-items: center;
   gap: 10px;
   padding: 18px;
@@ -357,12 +360,6 @@ h1 {
   }
 
   .qr-panel {
-    grid-template-columns: 1fr 260px;
-    align-items: center;
-    padding: 28px 30px;
-  }
-
-  .qr-panel .secondary {
-    grid-column: 1 / -1;
+    padding: 30px;
   }
 }
