@@ -13,6 +13,7 @@ const contact = {
 const pageUrl = new URL(window.location.href);
 pageUrl.hash = "";
 const digitalCardUrl = pageUrl.toString();
+const googleContactsImportUrl = "https://contacts.google.com/import";
 
 const saveContactButton = document.querySelector("#save-contact");
 const downloadQrButton = document.querySelector("#download-qr");
@@ -65,6 +66,9 @@ function downloadBlob(content, type, fileName) {
 
 function saveContact() {
   downloadBlob(buildVCard(), "text/vcard;charset=utf-8", contact.fileName);
+
+  // Google Contacts cannot be written directly without OAuth, so open its vCard import flow.
+  window.open(googleContactsImportUrl, "_blank", "noopener");
 }
 
 function generateQrCode() {
